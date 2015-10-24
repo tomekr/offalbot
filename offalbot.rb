@@ -1,5 +1,4 @@
 require 'slack-ruby-client'
-require 'mechanize'
 require 'uri'
 
 TRIGGERS = ["awful", "offal", "brain", "liver" "kidney", "stomach", "tripe", "tongue", "testicle", "colon"]
