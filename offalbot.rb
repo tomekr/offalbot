@@ -1,7 +1,7 @@
 require 'slack-ruby-client'
 require 'uri'
 
-TRIGGERS = ["awful", "offal", "brain", "liver" "kidney", "stomach", "tripe", "tongue", "testicle", "colon"]
+TRIGGERS = ["awful", "offal", "brain", "liver" "kidney", "stomach", "tripe", "tongue", "testicle", "colon", "spleen", "lung"]
 
 OFFAL = [
           "Blood sausages are sausages filled with blood that are cooked or dried and mixed with a filler until they are thick enough to congeal when cooled. The dish is found world-wide. Pig, cattle, sheep, duck, and goat blood can be used depending on different countries",
