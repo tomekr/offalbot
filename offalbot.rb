@@ -1,4 +1,5 @@
 require 'slack-ruby-client'
+require 'securerandom'
 require 'uri'
 
 TRIGGERS = ["awful", "offal", "brain", "liver" "kidney", "stomach", "tripe", "tongue", "testicle", "colon", "spleen", "lung"]
@@ -31,7 +32,7 @@ client.on :message do |data|
   # It may be possible that you get a message with no text
   if data['text']
     if TRIGGERS.any? { |word| data['text'].include?(word) }
-      client.message channel: data['channel'], text: OFFAL.sample
+      client.message channel: data['channel'], text: OFFAL.sample(random: SecureRandom)
     end
   end
 end
